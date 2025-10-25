@@ -8,14 +8,6 @@ Landing page responsiva para a ReciclaTech, uma plataforma fictícia para doaç�
 
 ---
 
-## Preview
-
-![Preview da landing page ReciclaTech](./ReciclaTec%20-%20DESKTOP.jpg)
-
-_(Dica: Se o caminho da imagem acima estiver errado, arraste um screenshot do seu projeto para cá para substituí-lo)_
-
----
-
 ## Sobre o Projeto
 
 O ReciclaTech é um projeto de front-end que simula uma plataforma para conectar doadores de eletrônicos a quem precisa, visando reduzir o lixo eletrônico e promover a inclusão digital.
