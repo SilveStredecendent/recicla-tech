@@ -1,0 +1,129 @@
+@import "variables";
+.header {
+  background: $color-bg-white;
+  padding: 2rem 0;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo img {
+    height: 30px;
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      gap: 4rem;
+    }
+
+    a {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: $color-text-medium;
+      position: relative;
+      padding-bottom: 0.5rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $color-primary;
+        transition: width 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        color: $color-text-dark;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.footer {
+  background: $color-bg-dark;
+  color: $color-text-light;
+  padding-top: 8rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 5rem;
+    margin-bottom: 6rem;
+  }
+
+  &__logo img {
+    height: 30px; // Ajuste conforme seu logo
+    margin-bottom: 1.5rem;
+  }
+
+  &__about p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 300px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-text-white;
+    margin-bottom: 2rem;
+  }
+
+  &__list li {
+    margin-bottom: 1.2rem;
+
+    a {
+      font-size: 1.5rem;
+      color: $color-text-light;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.5rem;
+
+    .social-link img {
+      width: 24px;
+      height: 24px;
+      filter: invert(1);
+      opacity: 0.8;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba($color-text-light, 0.1);
+    padding: 2.5rem 0;
+
+    p {
+      text-align: center;
+      font-size: 1.4rem;
+      color: $color-text-light;
+    }
+  }
+}
