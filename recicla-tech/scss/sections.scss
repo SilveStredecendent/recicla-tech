@@ -1,0 +1,177 @@
+@import "variables";
+
+.hero {
+  background: $color-bg-white;
+  padding: 8rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  &__title {
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    margin-bottom: 3.5rem;
+    max-width: 50ch;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__image img {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+  }
+}
+
+.stats {
+  background: $color-bg-light-gray;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__number {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    color: $color-text-medium;
+  }
+}
+
+.how-it-works {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .column__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--green {
+      color: $color-primary;
+    }
+    &--blue {
+      color: $color-secondary;
+    }
+  }
+
+  .column__description {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .step-list__item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .step-list__number {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $color-text-white;
+  }
+
+  .step-list--green .step-list__number {
+    background: $color-primary;
+  }
+  .step-list--blue .step-list__number {
+    background: $color-secondary;
+  }
+
+  .step-list__content {
+    strong {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $color-text-dark;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.products {
+  background: $color-bg-light-gray;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+.testimonials {
+  background: $color-bg-white;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+.cta {
+  background: $color-bg-light-gray;
+
+  .container {
+    text-align: center;
+  }
+
+  .section-subtitle {
+    margin-bottom: 4rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
